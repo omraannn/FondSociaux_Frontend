@@ -1,0 +1,330 @@
+@import "variables";
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.text--gray {
+  color: #4a5472
+}
+
+.red-row {
+  background-color: rgba(236, 221, 160, 0.22);
+}
+.green-row {
+  background-color: #effdf6;
+}
+
+.link-reset {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.link {
+  width: 200px;
+  color: white;
+  outline: 0;
+  grid-gap: 8px;
+  align-items: center;
+  background-color: $color-001529;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  flex-shrink: 0;
+  font-size: 16px;
+  gap: 8px;
+  justify-content: center;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all .14s ease-out;
+  white-space: nowrap;
+  &:hover {
+    box-shadow: 4px 4px 0 #000;
+    transform: translate(-4px,-4px);
+  }
+  &:focus-visible{
+    outline-offset: 1px;
+  }
+}
+
+.custom--link {
+  width: max-content !important;
+  &:hover {
+    color: white !important;
+  }
+}
+
+@media (max-width: 792px) {
+  .link {
+    width: max-content;
+  }
+}
+
+.form-control {
+  box-shadow: none !important;
+  &:focus {
+    border-color: $color-001529 !important;
+  }
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+@media (max-width: 800px) {
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .ant-table-content {
+    overflow-x:scroll;
+  }
+}
+
+.ant-modal-content {
+  background-color: #F5F5F5 !important;
+  & .ant-modal-header {
+    background-color: #F5F5F5 !important;
+  }
+}
+
+.ant-notification-notice-message {
+  margin-bottom: 0 !important;
+}
+
+.login-btn:hover {
+  color: $color-001529 !important;
+  border-color: $color-001529 !important;
+}
+.signout-btn {
+  @media (max-width: 900px) {
+    font-size: 10px;
+  }
+}
+.signout-btn:hover {
+  transition: .3s all ease;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}
+
+::selection {
+  background: $color-001529;
+  color: #FFFFFF;
+}
+
+.profile,
+.register-wrapper,
+.refund-demand-wrapper{
+  & .form-floating > label {
+    left: 10px !important;
+  }
+}
+
+.not-found {
+  height: 83vh;
+  & h2 {
+    top: 55%
+  }
+  & p {
+    top: 60%
+  }
+  & .link {
+    top: 65%
+  }
+}
+
+/* ----------- Home page animation ----------- */
+.container-custom {
+  max-width: 1100px;
+  width: 90%;
+  margin: 40px auto;
+  padding-bottom: 150px;
+
+  & svg {
+    margin: auto;
+  }
+
+  @keyframes line {
+    from{
+      opacity:0;
+    }
+    to {
+      stroke-dashoffset: 0;
+      opacity:1;
+    }
+  }
+
+  #dialog-line-1{
+    animation: line 0.6s 2s forwards ease-in-out;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+  }
+  #dialog-line-2{
+    animation: line 0.6s 2.8s forwards ease-in-out;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+  }
+  #dialog-line-3{
+    animation: line 0.6s 3.6s forwards ease-in-out;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+  }
+  #dialog-line{
+    animation: line 0.6s 5s forwards ease-in-out;
+    stroke-dasharray: 40;
+    stroke-dashoffset: 40;
+  }
+  #money{
+    animation: scala 1.5s 5s infinite alternate ease-in-out;
+    transform-origin: 22px 22px;
+    opacity:0;
+  }
+  #oval{
+    animation: scala 1s 5s forwards ease-in-out;
+    transform-origin: 22px 22px;
+    opacity:0;
+  }
+  #big-bubble path:nth-child(1){
+    animation: scala 1s forwards ease-in-out;
+    transform-origin: 0 64px;
+    opacity:1;
+  }
+  #bubble-mini #little-bubble{
+    animation: scala 0.8s 4s forwards ease-in-out;
+    transform-origin: 111px 115px;
+    opacity:0;
+  }
+  @keyframes scala{
+    from{
+      transform: scale(0);
+      opacity:0;
+    }
+
+    to{
+      transform: scale(1);
+      opacity:1;
+    }
+  }
+  h1,h3 {
+    max-width: 40ch;
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    & span {
+      display: inline-block;
+      opacity: 0;
+      filter: blur(4px);
+    }
+    & span:nth-child(1) {
+      animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+    & span:nth-child(2) {
+      animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+    & span:nth-child(3) {
+      animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+    & span:nth-child(4) {
+      animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+    & span:nth-child(5) {
+      animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
+  // scroll down animation
+  & .scroll-downs {
+    position: relative;
+    top: 185px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width :34px;
+    height: 55px;
+  }
+  & .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #001529;
+    border-radius: 25px;
+    background-color: #001529;
+    box-sizing: content-box;
+  }
+  & .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
+  & .scroll-text {
+    width: max-content;
+    position: absolute;
+    left: -60px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    animation: bounce 2s infinite;
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .loading_verification_animation {
+    width: 300px;
+  }
+}
+
+.visitor-layout {
+  overflow: hidden;
+}

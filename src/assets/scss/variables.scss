@@ -1,0 +1,30 @@
+/* ---------- Variables ----------- */
+$color-001529 : #001529;
+$color-F2F2F2 : #F2F2F2;
+
+$color: (
+        typography: (
+                1: #11103E,
+                2: #565678,
+                3: #ABABC9,
+                1i: #FFF,
+                2i: rgba( #FFF, .4 )
+        ),
+        bg: (
+                1: #FFFFFF,
+                2: #EEF1FA,
+                3: #D2DAF0
+        ),
+        primary: (
+                1: #4950F6,
+                2: #8D92FA,
+                3: #261FB6,
+                4: #E0E1FE
+        ),
+        secondary: (
+                1: #FF6381,
+                2: #FF97AA,
+                3: #FF3058,
+                4: #FFD2DA
+        )
+);

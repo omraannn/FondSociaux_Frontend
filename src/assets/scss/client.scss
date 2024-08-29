@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import 'variables';
+
+/*--------------------------------------------------------------
+1.0
+	* Home Page GUEST LAYOUT
+	* v.01
+--------------------------------------------------------------*/
+
+@import "layout/header";
+@import "layout/hero";
+@import "layout/features";
+@import "layout/footer";
+
+@import "pages/login-register";
+@import "pages/profile";
+
+@import "pages/refund";
+

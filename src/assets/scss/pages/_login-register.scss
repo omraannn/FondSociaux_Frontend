@@ -1,0 +1,39 @@
+/* ----------- start Login & register pages ---------- */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 81.5vh;
+  margin: 15px;
+
+  @media (min-width: 1600px) {
+    &-content {
+      width: 27%;
+    }
+  }
+}
+
+.register-wrapper {
+  min-height: 80vh;
+  margin: 15px;
+
+  @media (min-width: 1200px) {
+    &-content {
+      width: 55%;
+    }
+  }
+}
+
+.ant-upload {
+  width: 100% !important;
+
+  & .ant-btn  {
+    width: 100% !important;
+    padding: 20px;
+  }
+
+  & .ant-upload-select {
+    width: 100% !important;
+  }
+}
+/* ----------- end Login & register pages ---------- */
