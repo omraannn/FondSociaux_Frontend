@@ -91,7 +91,7 @@ const Employees = () => {
         try {
             setIsLoading(true);
             const response = await userService.getConfirmedEmployee(page, pageSize, filters);
-            setConfirmedEmployees(response.confirmedUsers.reverse());
+            setConfirmedEmployees(response.confirmedUsers);
             setPagination({
                 current: page,
                 pageSize: pageSize,

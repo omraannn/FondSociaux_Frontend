@@ -79,9 +79,15 @@ class refundService {
     /*|--------------------------------------------------------------------------
     | fetch all refund demands
     |-------------------------------------------------------------------------- */
-    async getRefundDemands() {
+    async getRefundDemands(page = 1, pageSize = 10,  filters = {}) {
         try {
-            const response = await apiAuth.get('/refunds/refund-demands');
+            const response = await apiAuth.get('/refunds/refund-demands', {
+                params: {
+                    page,
+                    pageSize,
+                    ...filters,
+                }
+            });
             return response.data;
         } catch (error:any) {
             if (error.response && error.response.data) {

@@ -94,6 +94,8 @@ const Refunds = () => {
     const [currentRefund, setCurrentRefund] = useState<any>(null);
     const [selectedRowKeys, setSelectedRowKeys] = useState<any>([]);
 
+
+
     const { handlePermissionErrors } = useHandlePermissionErrors();
 
     useEffect(() => {
@@ -105,7 +107,6 @@ const Refunds = () => {
             setShowedTopNotification(true);
         }
     }, []);
-
 
     /*|--------------------------------------------------------------------------
     |  Fetch Type Fees for filter functionality
@@ -145,13 +146,12 @@ const Refunds = () => {
     /*|--------------------------------------------------------------------------
     |  Fetch auth user refunds
     |-------------------------------------------------------------------------- */
-    const fetchRefunds = async () => {
+    const fetchRefunds = async (page = 1, pageSize = 10, filters = {}) => {
         try {
             setIsLoading(true);
-            const response = await refundService.getRefundDemands();
-
-
+            const response = await refundService.getRefundDemands(page, pageSize, filters);
             setRefunds(response.refunds);
+
         } catch (error) {
             await handlePermissionErrors(error);
             console.log(error)
@@ -813,7 +813,7 @@ const Refunds = () => {
     |-------------------------------------------------------------------------- */
     const handleTypeFeeFilter = (value:any) => setFilteredTypeFee(value)
     const handleStatusFilter = (value:any) => setFilteredStatus(value);
-    const handleCinFilter = (value:any) => setFilteredCin(value);
+    const handleCinFilter = (value:any) => setFilteredCin(value)
     const handlePayedFilter = (value:any) => setFilteredPayed(value);
 
     const handleDateFilter = (dates:any) => {
@@ -824,6 +824,7 @@ const Refunds = () => {
             setFilteredDate(null);
         }
     };
+
 
     const getFilteredRequests = () => {
         return refunds.filter((request:any) => selectedRowKeys.includes(request.id) && request.status === 'accepted');

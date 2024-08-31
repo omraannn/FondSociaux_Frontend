@@ -48,7 +48,6 @@ const Policies = () => {
 
     const fetchUserPermissions = async () => {
         const permissions = await userService.getUserPermissions();
-        console.log(permissions)
         setUserPermissions(permissions);
     };
 
