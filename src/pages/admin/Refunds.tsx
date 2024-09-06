@@ -339,6 +339,8 @@ const Refunds = () => {
                 }
             });
 
+            console.log(employee)
+
             const uploadedDocumentIds = fileList.map((file:any) => file.uid);
             formData.append('uploaded_document_ids', JSON.stringify(uploadedDocumentIds));
 
@@ -352,8 +354,7 @@ const Refunds = () => {
             }
         } catch (error) {
             await handlePermissionErrors(error);
-            console.error('Error updating refund:', error);
-            openNotificationWithIcon('error', 'Erreur', "Erreur lors de la mise à jour de la demande de remboursement");
+            handleError(error, setErrors)
         }
     };
 

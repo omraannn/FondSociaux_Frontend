@@ -130,9 +130,8 @@ const RefundsHistory = () => {
                 openNotificationWithIcon('success', 'Succès', 'La demande de remboursement a été mise à jour avec succès');
             }
         } catch (error) {
-            handlePermissionErrors(error);
+            await handlePermissionErrors(error);
             handleError(error, setErrors)
-            openNotificationWithIcon('error', 'Erreur', "Erreur lors de la mise à jour de la demande de remboursement");
         }
     };
 
