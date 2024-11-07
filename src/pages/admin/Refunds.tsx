@@ -1680,7 +1680,7 @@ const Refunds = () => {
                         </Select>
                     </Form.Item>
 
-                    {typeFee !== "Sélectionner un type de frais" && (
+                    {typeFee !== "" && (
                         <div>
                             {typeFees.map((fee:any) => (
                                 fee.id === typeFee && (
