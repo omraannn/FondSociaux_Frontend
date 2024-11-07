@@ -1,9 +1,25 @@
-# React + Vite
+# Reimbursement Management System (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **Reimbursement Management System** designed to help employees manage and request reimbursements for their insurance benefits. The system allows users to submit requests, track their status, and view their reimbursement history in a user-friendly interface.
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# FondSociaux_Frontend
+## Project Overview
+The **Reimbursement Management System** provides an efficient solution for managing reimbursement requests for insurance benefits. The frontend is built with a focus on ease of use, ensuring that employees can effortlessly navigate through different features, such as submitting new requests, viewing past reimbursements, and tracking the status of their submissions.
+
+## Features
+- **User Authentication**: Secure login and registration for employees and administrators.
+- **Request Reimbursements**: Allows employees to submit reimbursement requests with necessary details and supporting documents.
+- **Track Status**: Employees can track the approval status of their reimbursement requests in real-time.
+- **View Reimbursement History**: Users can view a history of all their submitted and approved reimbursements.
+- **Admin Dashboard**: Accessible only to administrators, featuring statistics and the ability to review, approve, or reject requests.
+
+## Technologies Used
+- **React**: For building the user interface and managing the application state.
+- **Ant Design**: Provides a set of elegant and responsive UI components.
+- **Axios**: For handling HTTP requests to interact with the backend API.
+- **Vite**: For fast development and optimized builds.
+- **Bootstrap**: For responsive and consistent styling.
