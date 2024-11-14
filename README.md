@@ -13,7 +13,7 @@ The **Reimbursement Management System** provides an efficient solution for manag
 
 ## Demo
 You can view a live demonstration of the **Reimbursement Management System** directly below. Click on the image to view the demo:
-[![View Demo](./assets/images/demo-thumbnail.jpg)](https://drive.google.com/file/d/1jcthhOf8YtAJsnnXDphKQ1gE22EXRvEm/preview)
+[![View Demo](./src/assets/images/demo-thumbnail.jpg)](https://drive.google.com/file/d/1jcthhOf8YtAJsnnXDphKQ1gE22EXRvEm/preview)
 
 ## Features
 - **User Authentication**: Secure login and registration for employees and administrators.
