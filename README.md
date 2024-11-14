@@ -4,18 +4,23 @@ This project is a **Reimbursement Management System** designed to help employees
 
 ## Table of Contents
 - [Project Overview](#project-overview)
+- [Demo](#demo)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 
 ## Project Overview
 The **Reimbursement Management System** provides an efficient solution for managing reimbursement requests for insurance benefits. The frontend is built with a focus on ease of use, ensuring that employees can effortlessly navigate through different features, such as submitting new requests, viewing past reimbursements, and tracking the status of their submissions.
 
+## Demo
+You can view a live demonstration of the **Reimbursement Management System** at the following link:
+[View Demo](https://drive.google.com/file/d/1jcthhOf8YtAJsnnXDphKQ1gE22EXRvEm/view?usp=drive_link)
+
 ## Features
 - **User Authentication**: Secure login and registration for employees and administrators.
 - **Request Reimbursements**: Allows employees to submit reimbursement requests with necessary details and supporting documents.
 - **Track Status**: Employees can track the approval status of their reimbursement requests in real-time.
 - **View Reimbursement History**: Users can view a history of all their submitted and approved reimbursements.
-- **Admin Dashboard**: Accessible only to administrators, featuring statistics and the ability to review, approve, or reject requests.
+- **Admin Dashboard**: Accessible only to administrators, featuring statistics and the ability to review, manage requests.
 
 ## Technologies Used
 - **React**: For building the user interface and managing the application state.
