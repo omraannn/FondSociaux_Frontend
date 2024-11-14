@@ -12,8 +12,8 @@ This project is a **Reimbursement Management System** designed to help employees
 The **Reimbursement Management System** provides an efficient solution for managing reimbursement requests for insurance benefits. The frontend is built with a focus on ease of use, ensuring that employees can effortlessly navigate through different features, such as submitting new requests, viewing past reimbursements, and tracking the status of their submissions.
 
 ## Demo
-You can view a live demonstration of the **Reimbursement Management System** at the following link:
-[View Demo](https://drive.google.com/file/d/1jcthhOf8YtAJsnnXDphKQ1gE22EXRvEm/view?usp=drive_link)
+You can view a live demonstration of the **Reimbursement Management System** directly below. Click on the image to view the demo:
+[![View Demo](https://via.placeholder.com/800x450?text=Demo+Vid%C3%A9o)](https://drive.google.com/file/d/1jcthhOf8YtAJsnnXDphKQ1gE22EXRvEm/preview)
 
 ## Features
 - **User Authentication**: Secure login and registration for employees and administrators.
